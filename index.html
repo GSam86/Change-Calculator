@@ -2,13 +2,31 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <title>Change Calculator</title>
   </head>
-  <body>
-    <!-- Write your markup here -->
+ <body>
+  
+  <div class="background"></div>
+  <div class="calculator-box">
+    <h1>Change Calculator</h1>
 
-    <!-- Don't forget to add your <script> tag here -->
+    <div class="centered-form">
+      <input id="amount-due" type="text" placeholder="amount due($)" />
+      <input id="amount-received" type="text" placeholder="amount received($)" />
 
-  </body>
+      <button id="calculate-change">Calculate Change</button>
+      <div id="bills-output" class="highlight-container"></div>
+      <div id="coins-output" class="highlight-container"></div>
+
+      </div>
+  </div>
+
+  <script src="main.js" charset="utf-8"></script>
+</body>
+
+
+    
+
 </html>

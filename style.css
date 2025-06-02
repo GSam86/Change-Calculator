@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: #111;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator-box {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border: 2px solid #00ffff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00ffff, 0 0 40px #00ffff44;
+  text-align: center;
+  width: 350px;
+  color: #fff;
+}
+
+.centered-form input,
+.centered-form button {
+  width: 80%;
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+  font-size: 16px;
+}
+
+.centered-form input::placeholder {
+  color: #00ffffaa;
+}
+
+input {
+  background: transparent;
+  border: 1px solid #00ffff;
+  color: #00ffff;
+  border-radius: 6px;
+  box-shadow: 0 0 5px #00ffff66;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #00ffff;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffffaa;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #00cccc;
+  box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffffaa;
+}
+
+h1 {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+}
+
+.highlight-container {
+  background: rgba(0, 0, 0, 0.6);
+  color: #00ffff;
+  text-shadow: 0 0 8px #00ffff, 0 0 16px #00ffff;
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 15px;
+  font-family: monospace;
+  border: 1px solid #00ffffaa;
+}
+
+#bills-output strong:last-child,
+.total-change {
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+  font-size: 1.2em;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Floating background symbols */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(to bottom, #000428, #004e92);
+}
+
+.symbol {
+  position: absolute;
+  color: #00ffff44;
+  text-shadow: 0 0 8px #00ffff88, 0 0 16px #00ffff44;
+  animation: float 10s linear infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-120vh);
+  }
+}
